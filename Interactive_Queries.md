@@ -11,6 +11,7 @@ WHERE coach_id = (
     WHERE team_name = 'Chennai Super Kings'
 );
 
+
 SELECT name  
 FROM Player  
 WHERE roles = 'Batsman'  
@@ -50,6 +51,7 @@ WHERE strike_rate = (
     SELECT MAX(strike_rate)  
     FROM Player
 );
+
 
 SELECT country  
 FROM CoachDetails  
