@@ -12,4 +12,5 @@ Exploring the Indian Premier League (IPL) with our thoughtfully designed databas
 - Information on team owners and sponsorships.
 
 Whether you're a cricket enthusiast or a data analyst, our IPL database promises an immersive exploration!
+
 ![IPL Logo](ipl_logo.png)
