@@ -2,8 +2,6 @@
 
 This document contains interactive SQL queries and triggers for managing IPL (Indian Premier League) data.
 
-## 1. Find the name of the coach for the team 'Chennai Super Kings'
-
 ```sql
 SELECT coach_name  
 FROM CoachDetails  
