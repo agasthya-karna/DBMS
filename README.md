@@ -13,4 +13,7 @@ Exploring the Indian Premier League (IPL) with our thoughtfully designed databas
 
 Whether you're a cricket enthusiast or a data analyst, our IPL database promises an immersive exploration!
 
+Tables Creation, Inserting Data , Queries Execution in this SQL worksheet:
+https://livesql.oracle.com/ords/livesql/s/bjwvzc9u8qd18r5y274jqapm4
+
 ![IPL Logo](ipl_logo.png)
