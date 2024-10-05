@@ -1,7 +1,4 @@
 # Database Tables - Creation and Insert Statements
-
-## Table: `Teams`
-
 ```sql
 CREATE TABLE teams (
     team_id NUMBER(10),
@@ -9,9 +6,6 @@ CREATE TABLE teams (
     PRIMARY KEY (team_id)
 );
 
-Table: Player
-sql
-Copy code
 CREATE TABLE player (
     player_id NUMBER(10),
     name VARCHAR2(30),
@@ -24,9 +18,7 @@ CREATE TABLE player (
     PRIMARY KEY (player_id),
     FOREIGN KEY (team_id) REFERENCES teams(team_id)
 );
-Table: CoachDetails
-sql
-Copy code
+
 CREATE TABLE CoachDetails (
     coach_id INT(10),
     country VARCHAR(30) NOT NULL,
@@ -34,17 +26,13 @@ CREATE TABLE CoachDetails (
     coach_name VARCHAR(30) NOT NULL,
     PRIMARY KEY (coach_id)
 );
-Table: SponsersDetails
-sql
-Copy code
+
 CREATE TABLE SponsersDetails (
     company_name VARCHAR NOT NULL,
     country VARCHAR NOT NULL,
     PRIMARY KEY (company_name)
 );
-Table: Stadium
-sql
-Copy code
+
 CREATE TABLE Stadium (
     city VARCHAR(30),
     country VARCHAR(30),
@@ -52,17 +40,13 @@ CREATE TABLE Stadium (
     Stadium_name VARCHAR(30),
     PRIMARY KEY (Stadium_name)
 );
-Table: Team_owners
-sql
-Copy code
+
 CREATE TABLE Team_owners (
     owner_name VARCHAR(30),
     profession VARCHAR(30),
     PRIMARY KEY (owner_name)
 );
-Table: Teams
-sql
-Copy code
+
 CREATE TABLE Teams (
     team_id INT(10),
     team_name VARCHAR(30),
@@ -72,9 +56,7 @@ CREATE TABLE Teams (
     FOREIGN KEY (coach_id) REFERENCES CoachDetails(coach_id),
     FOREIGN KEY (owner_name) REFERENCES Team_owners(owner_name)
 );
-Table: Player
-sql
-Copy code
+
 CREATE TABLE Player (
     player_id INT,
     role VARCHAR2(30),
@@ -87,9 +69,7 @@ CREATE TABLE Player (
     PRIMARY KEY (player_id),
     FOREIGN KEY (team_id) REFERENCES Teams(team_id)
 );
-Table: Matches
-sql
-Copy code
+
 CREATE TABLE Matches (
     match_id INT(10),
     match_type VARCHAR2(30),
@@ -100,9 +80,7 @@ CREATE TABLE Matches (
     FOREIGN KEY (Stadium_name) REFERENCES Stadium(Stadium_name),
     FOREIGN KEY (man_of_match) REFERENCES Player(player_id)
 );
-Table: Played
-sql
-Copy code
+
 CREATE TABLE Played (
     fours INT(5),
     sixes INT(5),
@@ -114,9 +92,7 @@ CREATE TABLE Played (
     FOREIGN KEY (team_id) REFERENCES Teams(team_id),
     FOREIGN KEY (match_id) REFERENCES Matches(match_id)
 );
-Table: IPL
-sql
-Copy code
+
 CREATE TABLE IPL (
     year INT(5),
     company_name VARCHAR2(30),
